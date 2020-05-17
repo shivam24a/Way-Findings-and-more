@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>index</title>
+    <!-- css and javascript files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+    <link rel="stylesheet" type="text/css" href="base.css">
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/024171d885.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="base.js"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Play:wght@700&family=Faster+One&display=swap" rel="stylesheet">
+    <!-- css and javascript files -->
+</head>
+<body>
+    <!-- This is top part -->
+    <div class="header">
+        <div class="date_and_time_screen">
+            <p id="time"></p>
+            <p id="date"></p>
+        </div>
+        <div class="station_name_screen">
+            <h1 class="station_name"> ISBT &nbsp BHOPAL </h1>
+        </div>
+    </div>
+    <!-- end top part -->
+    <hr>
+    <!-- THIS is middle part -->
+    <div class="container-fluid">
+        <div class="middle_part row">
+            <!-- this is LEFT side bar part of button MAP,WAYFINDING,COMMERCIAL_INFORMATION -->
+            <div class="side_bar col-3">
+                <div class="map_screen_button">
+                    <form id="map">
+                        <button type="submit" class="btn1">
+                            <div class="d-flex bd-highlight">
+                                <div class="p-2 flex-fill bd-highlight"><i class="fas fa-map-marked-alt fa-5x"></i></div>
+                                <div class="side_bar_names p-2 flex-fill bd-highlight">
+                                    <h2><b>MAP</b></h2>
+                                </div>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+                <div class="wayfinding_screen_button">
+                    <form id="wayfinding">
+                        <button class="btn1" type="submit">
+                            <div class="d-flex bd-highlight">
+                                <div class="p-2 flex-fill bd-highlight"><i class="fas fa-route fa-5x"></i></div>
+                                <div class="side_bar_names p-2 flex-fill bd-highlight">
+                                    <h2><b>WAY <br> FINDING</b></h2>
+                                </div>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+                <div class="commercial_information_screen_button">
+                    <form id="commercial_information">
+                        <button class="btn1" type="submit">
+                            <div class="d-flex bd-highlight">
+                                <div class="p-2 flex-fill bd-highlight"><i class="fas fa-info-circle fa-5x"></i></div>
+                                <div class="side_bar_names p-2 flex-fill bd-highlight">
+                                    <h2><b>COMMERCIAL <br> INFORMATION</b></h2>
+                                </div>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <!-- end LEFT side bar part of button MAP,WAYFINDING,COMMERCIAL_INFORMATION -->
+            <!-- here AJAX CALL will happen and t=change this div html -->
+            <div class="col-9" id="screen">
+            </div>
+            <!-- end AJAX CALL will happen and t=change this div html -->
+        </div>
+    </div>
+    <!-- end middle part -->
+</body>
+
+</html>

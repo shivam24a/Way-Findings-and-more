@@ -1,0 +1,216 @@
+<form id="way_finding_map" style="float:left; margin:0% 5% 0% ;">
+    <button id="way_finding_map1" type="submit" disabled="">Map1</button>
+    <button id="way_finding_map2" type="submit">Map2</button>
+</form>
+<style type="text/css">
+svg:hover #svg_4 {
+    stroke: pink;
+    fill: yellow;
+    background: red;
+}
+
+#svg_11:hover .rect1 {
+    fill: pink;
+}
+
+.room {
+    fill: yellow;
+    stroke: green;
+}
+
+.direction {
+    fill: blue;
+    opacity: 0;
+}
+
+.road {
+    fill: yellow;
+    stroke: green;
+    opacity: 0;
+}
+
+#road3 {
+    stroke: green;
+    opacity: 0;
+}
+</style>
+<svg width="1200" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+    <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+    <g class="layer">
+        <title>Layer 1</title>
+        <rect class="room" fill="#bfbfbf" height="119" id="room1" opacity="0.25" stroke="#000000" stroke-width="5" width="162" x="85.5" y="70.5" />
+        <text class="room_name" fill="#000000" font-family="serif" font-size="24" id="room_name1" opacity="0.8" stroke="#000000" stroke-width="0" text-anchor="middle" x="165.5" xml:space="preserve" y="136.5">Room1</text>
+        <rect class="room" fill="#bfbfbf" height="119" id="room2" opacity="0.25" stroke="#000000" stroke-width="5" width="162" x="376" y="70.5" />
+        <text class="room_name" fill="#000000" font-family="serif" font-size="24" id="room_name2" opacity="0.8" stroke="#000000" stroke-width="0" text-anchor="middle" x="460" xml:space="preserve" y="134.5">Room2</text>
+        <rect class="room" fill="#bfbfbf" height="119" id="room3" opacity="0.25" stroke="#000000" stroke-width="5" width="162" x="88.75" y="279.5" />
+        <text class="room_name" fill="#000000" font-family="serif" font-size="24" id="room_name3" opacity="0.8" stroke="#000000" stroke-width="0" style="cursor: move;" text-anchor="middle" x="168.75" xml:space="preserve" y="345.5">Room3</text>
+        <rect class="room" fill="#bfbfbf" height="119" id="room4" opacity="0.25" stroke="#000000" stroke-width="5" width="162" x="379.25" y="279.5" />
+        <text class="room_name" fill="#000000" font-family="serif" font-size="24" id="room_name4" opacity="0.8" stroke="#000000" stroke-width="0" style="cursor: move;" text-anchor="middle" x="463.25" xml:space="preserve" y="343.5">Room4</text>
+        <line class="road" fill="none" id="mroad2" opacity="0.8" stroke="#000000" stroke-width="5" x1="171.50008" x2="465.51674" y1="232.46263" y2="231.46263" />
+        <line class="road" fill="none" id="mroad1" opacity="0.8" stroke="#000000" stroke-width="5" x1="6.5" x2="168.5" y1="232.5" y2="232.5" />
+        <line class="road" fill="none" id="road1" opacity="0.8" stroke="#000000" stroke-width="5" x1="169.5" x2="170.5" y1="187.5" y2="234.5" />
+        <line class="road" fill="none" id="road3" opacity="0.8" stroke="#000000" stroke-width="5" x1="170.5" x2="171.5" y1="233.5" y2="280.5" />
+        <line class="road" fill="none" id="road2" opacity="0.8" stroke="#000000" stroke-width="5" x1="466" x2="467" y1="188.5" y2="235.5" />
+        <line class="road" fill="none" id="road4" opacity="0.8" stroke="#000000" stroke-width="5" x1="467" x2="468" y1="234.5" y2="281.5" />
+        <path class="direction" d="m326.0517,231.82471l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_mr_1_to_3" opacity="0.8" stroke="#000000" stroke-width="5" />
+        <path class="direction" d="m174.39655,211.00001l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_rm_1_o" opacity="0.8" stroke="#000000" stroke-width="5" transform="rotate(90 171 211)" />
+        <path class="direction" d="m574.39655,232.00001l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_mr_2_to_4" opacity="0.8" stroke="#000000" stroke-width="5" />
+        <line class="road" fill="none" id="mroad3" opacity="0.8" stroke="#000000" stroke-width="5" x1="467" x2="732.99999" y1="232" y2="232" />
+        <path class="direction" d="m174.39655,258.00001l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_rm_3_o" opacity="0.8" stroke="#000000" stroke-width="5" transform="rotate(-90 171 258)" />
+        <path class="direction" d="m342.39655,232.00001l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_mr_3_to_1" opacity="0.8" stroke="#000000" stroke-width="5" transform="rotate(180 339 232)" />
+        <path class="direction" d="m469.39655,212.00001l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_rm_2_o" opacity="0.8" stroke="#000000" stroke-width="5" transform="rotate(90 466 212)" />
+        <path class="direction" d="m471.39655,254.00001l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_rm_4_o" opacity="0.8" stroke="#000000" stroke-width="5" transform="rotate(-90 468 254)" />
+        <path class="direction" d="m173.39655,211l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_rm_1_i" opacity="0.8" stroke="#000000" stroke-width="5" transform="rotate(-90 170 211)" />
+        <path class="direction" d="m43.39655,233.00001l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_mr_0_to_2" opacity="0.8" stroke="#000000" stroke-width="5" />
+        <path class="direction" d="m589.39655,234.00001l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_mr_4_to_2" opacity="0.8" stroke="#000000" stroke-width="5" transform="rotate(180 586 234)" />
+        <path class="direction" d="m53.39655,234.00001l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_mr_2_to_0" opacity="0.8" stroke="#000000" stroke-width="5" transform="rotate(180 50 234)" />
+        <path class="direction" d="m175.39655,255.00001l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_rm_3_i" opacity="0.8" stroke="#000000" stroke-width="5" transform="rotate(90 172 255)" />
+        <path class="direction" d="m469.39655,211.00002l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_rm_2_i" opacity="0.8" stroke="#000000" stroke-width="5" transform="rotate(-90 466 211)" />
+        <path class="direction" d="m470.39655,256.00001l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_rm_4_i" opacity="0.8" stroke="#000000" stroke-width="5" transform="rotate(90 467 256)" />
+        <rect class="room" fill="#bfbfbf" height="119" id="room5" opacity="0.25" stroke="#000000" stroke-width="5" width="162" x="647.25" y="70.5" />
+        <text class="room_name" fill="#000000" font-family="serif" font-size="24" id="room_name5" opacity="0.8" stroke="#000000" stroke-width="0" text-anchor="middle" x="727.25" xml:space="preserve" y="137.5">Room5</text>
+        <rect class="room" fill="#bfbfbf" height="119" id="room6" opacity="0.25" stroke="#000000" stroke-width="5" width="162" x="937.75" y="70.5" />
+        <text class="room_name" fill="#000000" font-family="serif" font-size="24" id="room_name6" opacity="0.8" stroke="#000000" stroke-width="0" text-anchor="middle" x="1021.75" xml:space="preserve" y="134.5">Room6</text>
+        <rect class="room" fill="#bfbfbf" height="119" id="room7" opacity="0.25" stroke="#000000" stroke-width="5" width="162" x="650.5" y="279.5" />
+        <text class="room_name" fill="#000000" font-family="serif" font-size="24" id="room_name7" opacity="0.8" stroke="#000000" stroke-width="0" text-anchor="middle" x="730.5" xml:space="preserve" y="346.5">Room7</text>
+        <rect class="room" fill="#bfbfbf" height="119" id="room8" opacity="0.25" stroke="#000000" stroke-width="5" width="162" x="941" y="279.5" />
+        <text class="room_name" fill="#000000" font-family="serif" font-size="24" id="room_name8" opacity="0.8" stroke="#000000" stroke-width="0" text-anchor="middle" x="1025" xml:space="preserve" y="343.5">Room8</text>
+        <line class="road" fill="none" id="mroad4" opacity="0.8" stroke="#000000" stroke-width="5" x1="733.25008" x2="1027.26674" y1="232.46263" y2="231.46263" />
+        <line class="road" fill="none" id="road5" opacity="0.8" stroke="#000000" stroke-width="5" x1="731.25" x2="732.25" y1="189.5" y2="236.5" />
+        <line class="road" fill="none" id="road7" opacity="0.8" stroke="#000000" stroke-width="5" x1="732.25" x2="733.25" y1="235.5" y2="282.5" />
+        <line class="road" fill="none" id="road6" opacity="0.8" stroke="#000000" stroke-width="5" x1="1027.75" x2="1028.75" y1="188.5" y2="235.5" />
+        <line class="road" fill="none" id="road8" opacity="0.8" stroke="#000000" stroke-width="5" x1="1028.75" x2="1029.75" y1="234.5" y2="281.5" />
+        <path class="direction" d="m887.8017,231.82471l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_mr_3_to_5" opacity="0.8" stroke="#000000" stroke-width="5" />
+        <path class="direction" d="m736.14655,212.00001l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_rm_5_o" opacity="0.8" stroke="#000000" stroke-width="5" transform="rotate(90 732.75 212)" />
+        <path class="direction" d="m1136.14655,233.00001l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_mr_4_to_6" opacity="0.8" stroke="#000000" stroke-width="5" />
+        <line class="road" fill="none" id="mroad5" opacity="0.8" stroke="#000000" stroke-width="5" x1="1028.75" x2="1190.75" y1="232" y2="232" />
+        <path class="direction" d="m736.14655,259.00001l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_rm_7_o" opacity="0.8" stroke="#000000" stroke-width="5" transform="rotate(-90 732.75 259)" />
+        <path class="direction" d="m904.14655,232.00001l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_mr_5_to_3" opacity="0.8" stroke="#000000" stroke-width="5" transform="rotate(180 900.75 232)" />
+        <path class="direction" d="m1031.14655,212.00001l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_rm_6_o" opacity="0.8" stroke="#000000" stroke-width="5" transform="rotate(90 1027.75 212)" />
+        <path class="direction" d="m1033.14655,254.00001l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_rm_8_o" opacity="0.8" stroke="#000000" stroke-width="5" transform="rotate(-90 1029.75 254)" />
+        <path class="direction" d="m735.14655,211l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_rm_5_i" opacity="0.8" stroke="#000000" stroke-width="5" transform="rotate(-90 731.75 211)" />
+        <path class="direction" d="m1151.14655,235.00001l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_mr_6_to_4" opacity="0.8" stroke="#000000" stroke-width="5" transform="rotate(180 1147.75 235)" />
+        <path class="direction" d="m736.14655,259.00001l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_rm_7_i" opacity="0.8" stroke="#000000" stroke-width="5" transform="rotate(90 732.75 259)" />
+        <path class="direction" d="m1031.14655,212.00002l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_rm_6_i" opacity="0.8" stroke="#000000" stroke-width="5" transform="rotate(-90 1027.75 212)" />
+        <path class="direction" d="m1033.14655,255.00001l-19.89656,-19.91725l13.10346,0l19.89656,19.91725l-19.89656,19.91723l-13.10346,0l19.89656,-19.91723z" fill="none" id="dir_rm_8_i" opacity="0.8" stroke="#000000" stroke-width="5" transform="rotate(90 1029.75 255)" />
+    </g>
+</svg>
+<div class="way_finding_search">
+    From:<input type="text" id="from_" name="from_" value="room1">
+    To:<input type="text" id="to_" name="to_" value="room4">
+    <button id="way_finding_click" type="click">Search</button>
+</div>
+<script>
+$(document).ready(function() {
+    $("#way_finding_map2").on('click', function(e) {
+        e.preventDefault();
+        req('/way_finding_map2');
+    })
+});
+
+$(document).ready(function() {
+    $("#way_finding_click").on('click', function(e) {
+
+        for (var i = 1; i < 6; i++) {
+            $("#mroad" + i).css("opacity", "0");
+        }
+        for (var i = 1; i < 4; i++) {
+            var ids = "#dir_mr_" + i + "_to_" + (i + 2);
+            $(ids).css("opacity", "0");
+            ids = "#dir_mr_" + (i + 2) + "_to_" + i;
+            $(ids).css("opacity", "0");
+        }
+        for (var i = 1; i < 9; i++) {
+            $("#road" + i).css("opacity", "0");
+        }
+        for (var i = 1; i < 9; i++) {
+            $("#dir_rm_" + i + "_o").css("opacity", "0");
+            $("#dir_rm_" + i + "_i").css("opacity", "0");
+        }
+        for (var i = 1; i < 9; i++) {
+            $("#room" + i).css("fill", "yellow");
+            $("#room" + i).css("stroke", "green");
+        }
+        var seg_room = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+        seg_room[1] = 1, seg_room[3] = 1, seg_room[2] = 2, seg_room[4] = 2;
+        seg_room[5] = 3, seg_room[7] = 3, seg_room[6] = 4, seg_room[8] = 4;
+
+
+        var v_from = $("#from_").val();
+        var v_to = $("#to_").val();
+
+
+        var dir_rm_x_o = "dir_rm_" + v_from[4] + "_o";
+        var dir_rm_x_i = "dir_rm_" + v_to[4] + "_i";
+
+        num_from = parseInt(v_from[4]);
+        num_to = parseInt(v_to[4]);
+
+        var seg_from = seg_room[num_from],
+            seg_to = seg_room[num_to];
+
+        console.log(dir_rm_x_o);
+        console.log(num_from);
+        console.log(num_to);
+
+
+        if (num_to == num_from) {
+            console.log("wrong");
+        }
+        if (seg_from < seg_to) {
+            // console.log("num_from");
+            for (var i = seg_from; i < seg_to; i++) {
+                numb = parseInt(i), numa = parseInt(i) + 2;
+                // numb=numb.toString(),numa=numa.toString();
+                dir_mr_x_to_y = "dir_mr_" + numb + "_to_" + numa;
+                mroad = "mroad" + (i + 1);
+                console.log(dir_mr_x_to_y);
+                dc_mr_id = document.getElementById(dir_mr_x_to_y);
+                mroad = document.getElementById(mroad);
+                dc_mr_id.style.opacity = "1";
+                mroad.style.opacity = "1";
+            }
+        }
+
+        if (seg_from > seg_to) {
+            // console.log("num_from");
+            for (var i = seg_from; i > seg_to; i--) {
+                numb = parseInt(i) + 1, numa = parseInt(i) - 1;
+                // numb=numb.toString(),numa=numa.toString();
+                dir_mr_x_to_y = "dir_mr_" + numb + "_to_" + numa;
+                mroad = "mroad" + i;
+                console.log(dir_mr_x_to_y, "ll");
+                dc_mr_id = document.getElementById(dir_mr_x_to_y);
+                mroad = document.getElementById(mroad);
+                dc_mr_id.style.opacity = "1";
+                mroad.style.opacity = "1";
+            }
+        }
+
+        for (var i = num_from; i <= num_to; i++) {
+
+        }
+
+        var dc_from = document.getElementById(v_from);
+        var dc_to = document.getElementById(v_to);
+        var dc_from_dir_rm_x_o = document.getElementById(dir_rm_x_o);
+        var dc_to_dir_rm_x_i = document.getElementById(dir_rm_x_i);
+        var road_from = document.getElementById("road" + num_from);
+        var road_to = document.getElementById("road" + num_to);
+        road_from.style.opacity = 1;
+        road_to.style.opacity = 1;
+
+
+        dc_from_dir_rm_x_o.style.opacity = "1";
+        dc_to_dir_rm_x_i.style.opacity = "1";
+
+        dc_from.style.fill = "red";
+        dc_from.style.stroke = "white";
+        dc_from.style.direction = "green";
+        dc_to.style.fill = "violet";
+        dc_to.style.stroke = "white";
+
+    });
+});
+</script>
+

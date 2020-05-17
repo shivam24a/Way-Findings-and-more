@@ -1,0 +1,340 @@
+<form id="way_finding_map" style="float:left; margin:0% 5% 0% ;">
+    <button id="way_finding_map1" type="submit">Map1</button>
+    <button id="way_finding_map2" type="submit" disabled="">Map2</button>
+</form>
+<script type="text/javascript" src="data.js"></script>
+<style type="text/css">
+.dir {
+    opacity: 0;
+}
+
+.road {
+    stroke: #454547;
+    -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .7));
+    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .7));
+    /*border: 5px solid red;*/
+}
+
+.room {
+    stroke: #c5dcbf;
+    fill: #fff8c1;
+}
+
+.shadow {
+    -webkit-filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, .7));
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, .7));
+    /* Similar syntax to box-shadow */
+}
+</style>
+<svg width="1320" height="600">
+    <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+    <g class="layer">
+        <path class="road road2_9 road9_2" d="m144.46531,284.5c-4.39892,-180.8042 240.0556,-183.14219 239.74139,-183.53185c-0.31421,-0.38966 9.11206,0.38966 8.79785,0" fill="transparent" id="svg_14" stroke="#000000" stroke-width="5" />
+        <line class="road road2_5 road5_2" fill="none" id="svg_2" stroke="#000000" stroke-width="5" transform="rotate(42.4792 261.5 387)" x1="102.5" x2="420.5" y1="387.5" y2="386.5" />
+        <line class="road road2_4 road4_2" fill="none" id="svg_3" stroke="#000000" stroke-width="5" x1="143.5" x2="308.50001" y1="283" y2="282" />
+        <rect class="room room4" fill="none" height="93" id="room4" stroke="#f0aa00" stroke-width="5" width="93.00001" x="1221.5" y="413.5" />
+        <line class="road road8_10 road10_8" fill="none" id="svg_6" stroke="#000000" stroke-width="5" transform="rotate(88.7382 395.988 236.434)" x1="347.97164" x2="444.00346" y1="236.93416" y2="235.93416" />
+        <line class="road road9_16 road16_9" fill="none" id="svg_7" stroke="#000000" stroke-width="5" x1="390.5" x2="602.50002" y1="101" y2="100" />
+        <line class="road road5_14 road14_5" fill="none" id="svg_8" stroke="#000000" stroke-width="5" x1="376.5" x2="702.49999" y1="493" y2="492" />
+        <line class="road road19_21 road21_19" fill="none" id="svg_9" stroke="#000000" stroke-width="5" transform="rotate(89.1048 805.745 318.207)" x1="775.10693" x2="836.38389" y1="318.70716" y2="317.70716" />
+        <line class="road road21_25 road25_21" fill="none" id="svg_10" stroke="#000000" stroke-width="5" x1="802.49999" x2="963.5" y1="290" y2="289" />
+        <line class="road road20_21 road21_20" fill="none" id="svg_11" stroke="#000000" stroke-width="5" transform="rotate(88.3839 800.78 194.464)" x1="703.76958" x2="897.78947" y1="195.53893" y2="193.38892" />
+        <line class="road road25_26 road26_25" fill="none" id="svg_13" stroke="#000000" stroke-width="5" transform="rotate(89.0207 960.53 262.965)" x1="933.02485" x2="988.04252" y1="263.46523" y2="262.46523" />
+        <line class="road road27_28 road28_27" fill="none" id="svg_15" stroke="#000000" stroke-width="5" transform="rotate(88.5312 1085.8 308.223)" x1="1064.13786" x2="1107.46347" y1="308.72313" y2="307.72313" />
+        <line class="road road25_27 road27_25" fill="none" id="svg_16" stroke="#000000" stroke-width="5" x1="961.5" x2="1100.50001" y1="289" y2="288" />
+        <line class="road road10_12 road12_10" fill="none" id="svg_17" stroke="#000000" stroke-width="5" transform="rotate(-24.0721 455.169 255.096)" x1="391.51485" x2="518.82229" y1="256.97482" y2="253.21688" />
+        <line class="road road10_13 road13_10" fill="none" id="svg_18" stroke="#000000" stroke-width="5" transform="rotate(19.179 458.5 303.5)" x1="391.58852" x2="525.41151" y1="303.21762" y2="303.78238" />
+        <path class="room room9" d="m364.5,331.5c0,3 113.46852,3 113.10011,2.5c-0.3684,-0.5 46.05053,-6.5 45.68213,-7c-0.3684,-0.5 18.78862,-7.5 18.42021,-8c-0.3684,-0.5 14.36777,-12.5 13.99936,-13c-0.3684,-0.5 12.89415,-20.5 12.52575,-21c-0.3684,-0.5 15.10458,-26.5 14.73617,-27c-0.3684,-0.5 107.20564,-1.5 106.83724,-2c-0.3684,-0.5 2.57883,171.5 2.21043,171c-0.3684,-0.5 -300.24948,5.5 -300.61789,5c-0.3684,-0.5 -26.89351,-100.5 -26.89351,-100.5z" fill="#ffffaa" id="room9" stroke="#f0aa00" stroke-width="5" />
+        <line class="road road27_33 road33_27" fill="none" id="svg_25" stroke="#000000" stroke-width="5" x1="1097.99999" x2="1190.00001" y1="288" y2="287" />
+        <line class="road road33_34 road34_33" fill="none" id="svg_26" stroke="#000000" stroke-width="5" transform="rotate(88.6678 1190.25 328.622)" x1="1146.62784" x2="1233.86632" y1="329.12221" y2="328.12221" />
+        <path class="road road20_31 road31_20" d="m1168.89638,143.8448c6.56737,-54.95711 -358.39074,-55.66777 -357.92164,-55.78621c0.4691,-0.11844 -13.60384,0.11844 -13.13474,0" fill="transparent" id="svg_27" stroke="#000000" stroke-width="5" transform="rotate(-3.76241 983.41 115.935)" />
+        <path class="road road23_34 road34_23" d="m949.24317,482.93463c-4.32993,-110.38366 236.29056,-111.81104 235.98127,-112.04894c-0.30928,-0.2379 8.96914,0.2379 8.65986,0" fill="transparent" id="svg_28" stroke="#000000" stroke-width="5" transform="rotate(178.053 1071.54 426.876)" />
+        <line class="road road34_35 road35_34" fill="none" id="svg_29" stroke="#000000" stroke-width="5" transform="rotate(32.472 1227.5 391.503)" x1="1183.87814" x2="1271.11663" y1="392.00311" y2="391.00311" />
+        <rect class="room room11" fill="none" height="90.99999" id="room11" stroke="#f0aa00" stroke-width="5" width="109.00002" x="1046" y="328" />
+        <rect class="room room10" fill="none" height="89" id="room10" stroke="#f0aa00" stroke-width="5" width="209.00001" x="855.49999" y="146" />
+        <rect class="room room6" fill="none" height="69" id="room6" stroke="#f0aa00" stroke-width="5" width="98.00001" x="551.5" y="8" />
+        <line class="road road16_20 road20_16" fill="none" id="svg_20" stroke="#000000" stroke-width="5" x1="599" x2="798.00001" y1="100" y2="99" />
+        <line class="road road16_17 road17_16" fill="none" id="svg_21" stroke="#000000" stroke-width="5" transform="rotate(89.2237 600.593 88.539)" x1="588.05756" x2="613.12774" y1="89.03938" y2="88.03938" />
+        <rect class="room room2" fill="none" height="74" id="room2" stroke="#f0aa00" stroke-width="5" width="100.00002" x="324.5" y="521" />
+        <rect class="room room1" fill="none" height="87" id="room1" stroke="#f0aa00" stroke-width="5" width="92.00001" x="10.49999" y="238" />
+        <rect class="room room7" fill="none" height="103" id="room7" stroke="#f0aa00" stroke-width="5" width="104.00001" x="253.5" y="140" />
+        <rect class="room room3" fill="none" height="72.99999" id="room3" stroke="#f0aa00" stroke-width="5" width="110" x="645.49999" y="514" />
+        <rect class="room room5" fill="none" height="95" id="room5" stroke="#f0aa00" stroke-width="5" width="83.00001" x="1221.5" y="85" />
+        <line class="road road22_23 road23_22" fill="none" id="svg_34" stroke="#000000" stroke-width="5" x1="806.99999" x2="954.99999" y1="492" y2="487" />
+        <line class="road road23_24 road24_23" fill="none" id="svg_35" stroke="#000000" stroke-width="5" transform="rotate(89.4645 953.49 471.972)" x1="967.37875" x2="939.59265" y1="472.47204" y2="471.47204" />
+        <rect class="room room12" fill="none" height="90.99999" id="room12" stroke="#f0aa00" stroke-width="5" width="114.00001" x="897.5" y="369.00001" />
+        <line class="road road8_9 road9_8" fill="none" id="svg_36" stroke="#000000" stroke-width="5" transform="rotate(88.7382 392.852 146.46)" x1="344.85759" x2="440.84537" y1="146.96014" y2="145.96014" />
+        <line class="road road7_8 road8_7" fill="none" id="svg_37" stroke="#000000" stroke-width="5" transform="rotate(-178.968 377.522 191.753)" x1="359.51625" x2="395.52834" y1="192.25255" y2="191.25255" />
+        <line class="road road3_4 road4_3" fill="none" id="svg_38" stroke="#000000" stroke-width="5" transform="rotate(89.0122 306.517 262.5)" x1="285.52677" x2="327.50774" y1="262.9997" y2="261.9997" />
+        <line class="road road4_10 road10_4" fill="none" id="svg_39" stroke="#000000" stroke-width="5" x1="306.5" x2="398.50001" y1="282" y2="281" />
+        <line class="road road1_2 road2_1" fill="none" id="svg_40" stroke="#000000" stroke-width="5" transform="rotate(-178.968 124.51 282.526)" x1="101.53175" x2="147.48817" y1="283.02581" y2="282.02581" />
+        <line class="road road5_6 road6_5" fill="none" id="svg_41" stroke="#000000" stroke-width="5" transform="rotate(-83.2342 376.271 505.998)" x1="359.84031" x2="392.70218" y1="506.49794" y2="505.49794" />
+        <path class="road road31_33 road33_31" d="m1185.00607,288.28001c0.19821,-155.75101 -10.81674,-157.76503 -10.80258,-158.1007c0.01416,-0.33567 -0.41058,0.33567 -0.39643,0" fill="transparent" id="svg_42" stroke="#000000" stroke-width="5" transform="rotate(-3.76241 1179.41 209.181)" />
+        <line class="road road36_31 road31_36" fill="none" id="svg_43" stroke="#000000" stroke-width="5" transform="rotate(152.622 1117.39 160.282)" x1="1058.071" x2="1176.70294" y1="160.30856" y2="160.25489" />
+        <line class="road road31_32 road32_31" fill="none" id="svg_44" stroke="#000000" stroke-width="5" transform="rotate(-178.968 1195.44 131.678)" x1="1167.49296" x2="1223.39376" y1="132.17821" y2="131.17821" />
+        <line class="road road14_15 road15_14" fill="none" id="svg_45" stroke="#000000" stroke-width="5" transform="rotate(89.0122 700.363 503.553)" x1="687.31918" x2="713.40597" y1="504.05301" y2="503.05301" />
+        <line class="road road14_22 road22_14" fill="none" id="svg_46" stroke="#000000" stroke-width="5" x1="698" x2="809.99999" y1="492" y2="491" />
+        <line class="road road29_30 road30_29" fill="none" id="svg_47" stroke="#000000" stroke-width="5" transform="rotate(-178.968 1029.5 393.499)" x1="1011.49452" x2="1047.50662" y1="393.9991" y2="392.9991" />
+        <line class="road road19_22 road22_19" fill="none" id="svg_48" stroke="#000000" stroke-width="5" transform="rotate(89.1048 807.804 419.964)" x1="881.65307" x2="733.9556" y1="419.96398" y2="419.96385" />
+        <line class="road road18_19 road19_18" fill="none" id="svg_49" stroke="#000000" stroke-width="5" transform="rotate(-178.968 750.997 348.211)" x1="693.4882" x2="808.5055" y1="348.7106" y2="347.7106" />
+        <line class="road road12_20 road20_12" fill="none" id="svg_50" stroke="#000000" stroke-width="5" transform="rotate(-24.0721 652.542 163.928)" x1="493.68314" x2="811.40045" y1="164.42805" y2="163.42805" />
+        <line class="road road11_12 road12_11" fill="none" id="svg_51" stroke="#000000" stroke-width="5" transform="rotate(-95.7627 507.978 213.222)" x1="492.0219" x2="523.93403" y1="214.01956" y2="212.42521" />
+        <rect class="room room8" fill="none" height="99.38452" id="room8" stroke="#f0aa00" stroke-width="5" transform="rotate(87.3933 505.062 164.025)" width="69.43406" x="470.34514" y="114.33318" />
+        <path class="dir dir1_2" d="m126.00656,280.74616l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_1" stroke="#000000" stroke-width="5" />
+        <path class="dir dir2_1" d="m127.66146,281.5l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_5" stroke="#000000" stroke-width="5" transform="rotate(-180 125.5 281.5)" />
+        <path class="dir dir2_9" d="m204.66146,159.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_12" stroke="#000000" stroke-width="5" transform="rotate(-53.1301 202.5 159.5)" />
+        <path class="dir dir9_2" d="m223.6614,140.49999l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_19" stroke="#000000" stroke-width="5" transform="rotate(129.806 221.5 140.5)" />
+        <path class="dir dir2_5" d="m264.66146,390.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_32" stroke="#000000" stroke-width="5" transform="rotate(48.3664 262.5 390.5)" />
+        <path class="dir dir15_14" d="m702.66146,502.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_33" stroke="#000000" stroke-width="5" transform="rotate(-90 700.5 502.5)" />
+        <path class="dir dir2_4" d="m225.66146,282.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_52" stroke="#000000" stroke-width="5" />
+        <path class="dir dir4_10" d="m349.66146,279.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_53" stroke="#000000" stroke-width="5" />
+        <path class="dir dir31_32" d="m1197.66146,130.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_54" stroke="#000000" stroke-width="5" />
+        <path class="dir dir22_23" d="m873.66146,488.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_55" stroke="#000000" stroke-width="5" />
+        <path class="dir dir21_25" d="m894.66146,290.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_56" stroke="#000000" stroke-width="5" />
+        <path class="dir dir5_14" d="m542.66146,492.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_57" stroke="#000000" stroke-width="5" />
+        <path class="dir dir18_19" d="m755.66146,348.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_58" stroke="#000000" stroke-width="5" />
+        <path class="dir dir7_8" d="m380.66146,193.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_59" stroke="#000000" stroke-width="5" />
+        <path class="dir dir8_7" d="m377.66146,191.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_60" stroke="#000000" stroke-width="5" transform="rotate(180 375.5 191.5)" />
+        <path class="dir dir5_6" d="m377.66146,502.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_4" stroke="#000000" stroke-width="5" transform="rotate(95.7106 375.5 502.5)" />
+        <path class="dir dir14_5" d="m537.66146,491.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_22" stroke="#000000" stroke-width="5" transform="rotate(180 535.5 491.5)" />
+        <path class="dir dir5_2" d="m258.66146,383.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_24" stroke="#000000" stroke-width="5" transform="rotate(-131.424 256.5 383.5)" />
+        <path class="dir dir6_5" d="m378.66146,506.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_30" stroke="#000000" stroke-width="5" transform="rotate(-86.3478 376.5 506.5)" />
+        <path class="dir dir23_22" d="m877.66146,490.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_31" stroke="#000000" stroke-width="5" transform="rotate(180 875.5 490.5)" />
+        <path class="dir dir19_18" d="m752.66146,347.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_61" stroke="#000000" stroke-width="5" transform="rotate(180 750.5 347.5)" />
+        <path class="dir dir3_4" d="m308.66146,262.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_62" stroke="#000000" stroke-width="5" transform="rotate(90 306.5 262.5)" />
+        <path class="dir dir10_4" d="m355.66146,279.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_63" stroke="#000000" stroke-width="5" transform="rotate(180 353.5 279.5)" />
+        <path class="dir dir4_3" d="m308.66146,263.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_64" stroke="#000000" stroke-width="5" transform="rotate(-90 306.5 263.5)" />
+        <path class="dir dir4_2" d="m245.66146,281.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_65" stroke="#000000" stroke-width="5" transform="rotate(180 243.5 281.5)" />
+        <path class="dir dir8_9" d="m396.6614,145.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_66" stroke="#000000" stroke-width="5" transform="rotate(-90 394.5 145.5)" />
+        <path class="dir dir10_8" d="m398.6614,233.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_67" stroke="#000000" stroke-width="5" transform="rotate(-90 396.5 233.5)" />
+        <path class="dir dir22_19" d="m809.6614,414.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_68" stroke="#000000" stroke-width="5" transform="rotate(-90 807.5 414.5)" />
+        <path class="dir dir12_11" d="m509.6614,214.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_69" stroke="#000000" stroke-width="5" transform="rotate(-95.0796 507.5 214.5)" />
+        <path class="dir dir8_10" d="m398.66146,227.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_70" stroke="#000000" stroke-width="5" transform="rotate(90 396.5 227.5)" />
+        <path class="dir dir13_10" d="m456.66146,303.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_71" stroke="#000000" stroke-width="5" transform="rotate(-152.354 454.5 303.5)" />
+        <path class="dir dir20_12" d="m644.66146,167.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_72" stroke="#000000" stroke-width="5" transform="rotate(155.225 642.5 167.5)" />
+        <path class="dir dir9_8" d="m394.66146,140.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_73" stroke="#000000" stroke-width="5" transform="rotate(90 392.5 140.5)" />
+        <path class="dir dir14_15" d="m702.66146,499.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_75" stroke="#000000" stroke-width="5" transform="rotate(90 700.5 499.5)" />
+        <path class="dir dir19_22" d="m809.66146,410.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_76" stroke="#000000" stroke-width="5" transform="rotate(90 807.5 410.5)" />
+        <path class="dir dir21_19" d="m807.66146,315.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_77" stroke="#000000" stroke-width="5" transform="rotate(90 805.5 315.5)" />
+        <path class="dir dir19_21" d="m808.66146,322.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_78" stroke="#000000" stroke-width="5" transform="rotate(-90 806.5 322.5)" />
+        <path class="dir dir21_20" d="m803.66146,198.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_79" stroke="#000000" stroke-width="5" transform="rotate(-90 801.5 198.5)" />
+        <path class="dir dir16_17" d="m602.66146,91.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_80" stroke="#000000" stroke-width="5" transform="rotate(-90 600.5 91.5)" />
+        <path class="dir dir25_26" d="m962.66146,262.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_81" stroke="#000000" stroke-width="5" transform="rotate(-90 960.5 262.5)" />
+        <path class="dir dir12_20" d="m643.66146,168.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_82" stroke="#000000" stroke-width="5" transform="rotate(-25.0169 641.5 168.5)" />
+        <path class="dir dir20_21" d="m802.66146,197.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_83" stroke="#000000" stroke-width="5" transform="rotate(90 800.5 197.5)" />
+        <path class="dir dir17_16" d="m602.66146,86.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_84" stroke="#000000" stroke-width="5" transform="rotate(90 600.5 86.5)" />
+        <path class="dir dir11_12" d="m509.66146,212.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_86" stroke="#000000" stroke-width="5" transform="rotate(85.2364 507.5 212.5)" />
+        <path class="dir dir10_13" d="m456.66146,301.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_87" stroke="#000000" stroke-width="5" transform="rotate(27.2553 454.5 301.5)" />
+        <path class="dir dir23_34" d="m1096.26003,463.82285l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_88" stroke="#000000" stroke-width="5" transform="rotate(-22.4967 1094.1 463.823)" />
+        <path class="dir dir10_12" d="m472.26003,248.82285l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_89" stroke="#000000" stroke-width="5" transform="rotate(-25.0169 470.099 248.823)" />
+        <path class="dir dir36_31" d="m1115.26003,161.82285l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_90" stroke="#000000" stroke-width="5" transform="rotate(-27.0154 1113.1 161.823)" />
+        <path class="dir dir12_10" d="m470.10454,248.15294l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_91" stroke="#000000" stroke-width="5" transform="rotate(155.225 467.943 248.153)" />
+        <path class="dir dir31_36" d="m1110.10454,165.15294l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_92" stroke="#000000" stroke-width="5" transform="rotate(153.571 1107.94 165.153)" />
+        <path class="dir dir34_23" d="m1108.10454,458.15294l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_93" stroke="#000000" stroke-width="5" transform="rotate(158.915 1105.94 458.153)" />
+        <path class="dir dir25_27" d="m1025.66146,288.5l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_94" stroke="#000000" stroke-width="5" />
+        <path class="dir dir27_33" d="m1134.66146,287.5l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_95" stroke="#000000" stroke-width="5" />
+        <path class="dir dir9_16" d="m492.66146,99.5l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_96" stroke="#000000" stroke-width="5" />
+        <path class="dir dir34_35" d="m1222.66146,389.5l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_97" stroke="#000000" stroke-width="5" transform="rotate(29.2914 1220.5 389.5)" />
+        <path class="dir dir16_20" d="m698.66146,99.5l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_98" stroke="#000000" stroke-width="5" />
+        <path class="dir dir20_31" d="m969.66146,94.5l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_99" stroke="#000000" stroke-width="5" />
+        <path class="dir dir25_21" d="m903.66146,289.50004l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_100" stroke="#000000" stroke-width="5" transform="rotate(180 901.5 289.5)" />
+        <path class="dir dir20_16" d="m694.66146,98.50004l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_101" stroke="#000000" stroke-width="5" transform="rotate(180 692.5 98.5)" />
+        <path class="dir dir31_20" d="m983.66146,94.50004l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_102" stroke="#000000" stroke-width="5" transform="rotate(180 981.5 94.5)" />
+        <path class="dir dir32_31" d="m1201.66146,130.50004l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_103" stroke="#000000" stroke-width="5" transform="rotate(180 1199.5 130.5)" />
+        <path class="dir dir27_25" d="m1027.66146,288.50004l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_104" stroke="#000000" stroke-width="5" transform="rotate(180 1025.5 288.5)" />
+        <path class="dir dir16_9" d="m500.66146,99.50004l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_106" stroke="#000000" stroke-width="5" transform="rotate(180 498.5 99.5)" />
+        <path class="dir dir33_27" d="m1131.66146,287.50004l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_107" stroke="#000000" stroke-width="5" transform="rotate(180 1129.5 287.5)" />
+        <path class="dir dir26_25" d="m962.66147,260.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_108" stroke="#000000" stroke-width="5" transform="rotate(90 960.5 260.5)" />
+        <path class="dir dir27_28" d="m1088.66147,305.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_109" stroke="#000000" stroke-width="5" transform="rotate(90 1086.5 305.5)" />
+        <path class="dir dir24_23" d="m954.66147,472.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_110" stroke="#000000" stroke-width="5" transform="rotate(90 952.5 472.5)" />
+        <path class="dir dir33_34" d="m1192.66147,326.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_111" stroke="#000000" stroke-width="5" transform="rotate(90 1190.5 326.5)" />
+        <path class="dir dir31_33" d="m1187.66147,218.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_112" stroke="#000000" stroke-width="5" transform="rotate(87.5104 1185.5 218.5)" />
+        <path class="dir dir28_27" d="m1087.66146,305.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_114" stroke="#000000" stroke-width="5" transform="rotate(-90 1085.5 305.5)" />
+        <path class="dir dir23_24" d="m955.66146,475.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_116" stroke="#000000" stroke-width="5" transform="rotate(-90 953.5 475.5)" />
+        <path class="dir dir34_33" d="m1192.66146,335.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_117" stroke="#000000" stroke-width="5" transform="rotate(-90 1190.5 335.5)" />
+        <path class="dir dir33_31" d="m1186.66146,219.50002l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_118" stroke="#000000" stroke-width="5" transform="rotate(-95.0796 1184.5 219.5)" />
+        <path class="dir dir30_29" d="m1032.66143,393.5l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_120" stroke="#000000" stroke-width="5" transform="rotate(180 1030.5 393.5)" />
+        <path class="dir dir35_34" d="m1218.66143,384.5l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_121" stroke="#000000" stroke-width="5" transform="rotate(-149.237 1216.5 384.5)" />
+        <path class="dir dir29_30" d="m1032.66146,394.5l-12.66144,-21.74869l8.33856,0l12.66144,21.74869l-12.66144,21.74867l-8.33856,0l12.66144,-21.74867z" fill="#7f7f7f" id="svg_126" stroke="#000000" stroke-width="5" />
+        <text class="name name1" fill="#000000" font-family="serif" font-size="24" id="name1" stroke="#f0aa00" stroke-width="0" text-anchor="middle" x="56.5" xml:space="preserve" y="285.5">A1</text>
+        <text class="name name2" fill="#000000" font-family="serif" font-size="24" id="name2" stroke="#f0aa00" stroke-width="0" text-anchor="middle" x="374.5" xml:space="preserve" y="564.5">A2</text>
+        <text class="name name7" fill="#000000" font-family="serif" font-size="24" id="name7" stroke="#f0aa00" stroke-width="0" text-anchor="middle" x="304.5" xml:space="preserve" y="199.5">LAB</text>
+        <text class="name name9" fill="#000000" font-family="serif" font-size="24" id="name9" stroke="#f0aa00" stroke-width="0" text-anchor="middle" x="548.5" xml:space="preserve" y="378.5">HALL</text>
+        <text class="name name8" fill="#000000" font-family="serif" font-size="24" id="name8" stroke="#f0aa00" stroke-width="0" text-anchor="middle" transform="rotate(-0.71616 502 161.5)" x="502.5" xml:space="preserve" y="169.5">A3</text>
+        <text class="name name6" fill="#000000" font-family="serif" font-size="24" id="name6" stroke="#f0aa00" stroke-width="0" text-anchor="middle" x="603.5" xml:space="preserve" y="46.5">B1</text>
+        <text class="name name3" fill="#000000" font-family="serif" font-size="24" id="name3" stroke="#f0aa00" stroke-width="0" text-anchor="middle" x="702.5" xml:space="preserve" y="558.5">B2</text>
+        <text class="name name10" fill="#000000" font-family="serif" font-size="24" id="name10" stroke="#f0aa00" stroke-width="0" text-anchor="middle" x="959.5" xml:space="preserve" y="196.5">RECEPTION</text>
+        <text class="name name12" fill="#000000" font-family="serif" font-size="24" id="name12" stroke="#f0aa00" stroke-width="0" text-anchor="middle" x="957.5" xml:space="preserve" y="419.5">B3</text>
+        <text class="name name11" fill="#000000" font-family="serif" font-size="24" id="name11" stroke="#f0aa00" stroke-width="0" text-anchor="middle" x="1101.5" xml:space="preserve" y="377.5">C1</text>
+        <text class="name name5" fill="#000000" font-family="serif" font-size="24" id="name5" stroke="#f0aa00" stroke-width="0" text-anchor="middle" x="1263.5" xml:space="preserve" y="141.5">C2</text>
+        <text class="name name4" fill="#000000" font-family="serif" font-size="24" id="name4" stroke="#f0aa00" stroke-width="0" text-anchor="middle" x="1268.5" xml:space="preserve" y="465.5">C3</text>
+    </g>
+</svg>
+<div class="way_finding_search" style="margin:5% 0 0 0">
+    From:<input type="text" id="from_" name="from_" value="LAB">
+    To:<input type="text" id="to_" name="to_" value="C1">
+    <button id="way_finding_click" type="click">Search</button>
+</div>
+<div class="footer" style="text-align:center;margin-top:2%">
+    <div class="cross" style="position:absolute;right:25%"></div>
+    <div class="bottom" style="font-size:25px;line-height:27px;color:#2E3436FF">
+    </div>
+    <!-- <button class="aa">ok</button> -->
+</div>
+<div id="extra" style="position: absolute;
+    right: 2%;
+    top: 0;"></div>
+<script>
+function tra(room_f, room_t) {
+
+    var pr = room_t,
+        ini = room_f,
+        fini = room_t;
+    while (par[room_f][room_t] != room_f) {
+        room_t = par[room_f][room_t];
+        $(".dir" + room_t + "_" + pr).css("opacity", "1");
+        $(".dir" + room_t + "_" + pr).css("fill", "yellow");
+        $(".road" + pr + "_" + room_t).css("stroke", "blue");
+        // $(".road" + pr + "_" + room_t).feDropShadow(" flood-color","pink");
+        $(".road" + pr + "_" + room_t).css("stroke-width", "10");
+        pr = room_t;
+    }
+    $(".dir" + room_f + "_" + pr).css("opacity", "1");
+    $(".dir" + room_f + "_" + pr).css("fill", "yellow");
+    $(".road" + pr + "_" + room_f).css("stroke", "blue");
+    $(".road" + pr + "_" + room_f).css("stroke-width", "10");
+    $("#extra").html("Shortest distance : " + dis[ini][fini] + "m");
+
+}
+
+function tra_sub(room_f, room_t) {
+    var pr = room_t;
+    while (par[room_f][room_t] != room_f) {
+        room_t = par[room_f][room_t];
+        $(".dir" + room_t + "_" + pr).css("opacity", "0.1");
+        $(".road" + pr + "_" + room_t).css("stroke", "skyblue");
+        $(".road" + pr + "_" + room_f).css("stroke-width", "8");
+        pr = room_t;
+    }
+    $(".dir" + room_f + "_" + pr).css("opacity", "0.1");
+    $(".road" + pr + "_" + room_f).css("stroke", "skyblue");
+    $("road" + pr + "_" + room_f).css("stroke-width", "8");
+
+}
+$(document).ready(function() {
+    $("#way_finding_map1").on('click', function(e) {
+        e.preventDefault();
+        req('/way_finding_map1');
+    });
+});
+
+k = 1;
+$(document).ready(function() {
+    $(".room").on("click", function() {
+        k = 0;
+        $(this).css("fill", "#AD7FA8");
+        var name = ".name" + $(this).attr('class').slice(9);
+        name = $(name).text();
+        $(".bottom").html(name + " This is room " + name + "<br>" + room_info[name]);
+        var datam = name + "This is room " + name + "<br>" + room_info[name];
+        $.ajax({
+                url: '/cross',
+                type: 'POST',
+                // dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
+                data: { "data": datam }
+            })
+            .done(function(res) {
+                $(".cross").html(res);
+                // alert(res);
+                console.log("success");
+            })
+            .fail(function() {
+                console.log("error");
+            })
+            .always(function() {
+                console.log("complete");
+            });
+
+    })
+});
+
+
+
+
+
+
+$(document).ready(function() {
+    high_color = "#AD7FA8"
+    cb = "";
+    $(".room").hover(function() {
+        cb = $(this).css("fill");
+        $(this).css("fill", high_color);
+        var name = ".name" + $(this).attr('class').slice(9);
+        name = $(name).text();
+        if (k == 1) $(".bottom").html(name + " This is room " + name + "<br>" + room_info[name]);
+    }, function() {
+        $(this).css("fill", cb);
+        if (k == 1) $(".bottom").html("");
+    });
+
+    $(".name").hover(function() {
+        name2 = ".room" + $(this).attr('class').slice(9);
+        $(name2).css("fill", high_color);
+        name = $(this).text();
+        if (k == 1) $(".bottom").html(name + " This is room " + name + "<br>" + room_info[name]);
+    }, function() {
+        $(name2).css("fill", cb);
+        if (k == 1) $(".bottom").html("");
+    });
+
+});
+
+$(document).ready(function() {
+    $("#way_finding_click").on('click', function(e) {
+        // $(".road").css("stroke","yellow");
+        $(".dir").css("opacity", "0");
+        $(".room").css("stroke", "#c5dcbf");
+        $(".room").css("fill", "#fff8c1");
+        $(".road").css("stroke", "#454547");
+        $(".road").css("stroke-width", "5");
+        var room_f = $('#from_').val();
+        var room_t = $('#to_').val();
+
+        room_f = room_f.toUpperCase(),
+            room_t = room_t.toUpperCase();
+
+        var lw = r_map[room_f][0],
+            I1, j1,
+            hg = r_map[room_t][0],
+            an = dis[lw][hg] + 1;
+
+        for (var i = 0; i < r_map[room_f].length; i++) {
+            for (var j = 0; j < r_map[room_t].length; j++) {
+                // alert(r_map[room_f][i]+" "+r_map[room_t][j]+" "+dis[r_map[room_f][i]][r_map[room_t][j]]+" "+an);
+                if (dis[r_map[room_f][i]][r_map[room_t][j]] < an) {
+                    an = dis[r_map[room_f][i]][r_map[room_t][j]];
+                    lw = r_map[room_f][i], hg = r_map[room_t][j];
+                    i1 = i, j1 = j;
+                    // alert("yes "+lw+" "+hg);
+                }
+            }
+        }
+        for (var i = 0; i < r_map[room_f].length; i++) {
+            for (var j = 0; j < r_map[room_t].length; j++) {
+                if ((i != i1 || j != j1)) {
+                    if (dis[r_map[room_f][i]][r_map[room_t][j]] < dis[lw][hg] + 200)
+                        tra_sub(r_map[room_f][i], r_map[room_t][j]);
+                }
+            }
+        }
+        tra(lw, hg);
+        // alert(lw+"_____"+hg);
+        // alert(".room"+room_id[room_f]);
+        $(".room" + room_id[room_f]).css("fill", "#fbc3c0");
+        $(".room" + room_id[room_f]).css("stroke", "##fbc3");
+        $(".room" + room_id[room_t]).css("stroke", "#fbc3");
+        $(".room" + room_id[room_t]).css("fill", "#f8db");
+        // $(".name"+room_id[room_t]).css("fill","darkblue");
+    })
+});
+</script>

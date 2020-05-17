@@ -1,0 +1,37 @@
+<div style="padding-right: 2%;" id="mapid" style="width: 100%; height: 99%;"></div>
+<script>
+    var x = 23.2295,
+    y = 77.4438;
+var mymap = L.map('mapid').setView([x, y], 13);
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+    maxZoom: 18,
+    attribution: 'Public Dashboard',
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1
+}).addTo(mymap);
+L.marker([x, y]).addTo(mymap)
+    .bindPopup("<b>ISBT</b><br />Bhopal").openPopup();
+$('.leaflet-control-attribution a').hide()
+</script>
+<form style="margin-right: 10%;" id="map_navigation">
+    <div class="row" style="margin-left:3%; ">
+        <div class="col-10">
+            <div class="form-group row">
+                <label for="place_from" class="col-sm-2 col-form-label">From &nbsp: </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="place_from" name="place_from">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="place_to" class="col-sm-2 col-form-label">To &nbsp: </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="place_to" name="place_to">
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <button type="submit" style="margin-top:20px;padding:10px 50px 10px 50px;" class="btn btn-secondary btn-lg">SEARCH</button>
+        </div>
+    </div>
+</form>
