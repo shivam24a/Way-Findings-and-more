@@ -4,10 +4,10 @@ An Interactive Web Dashboard for Wayfindings ,Maps and more which can be install
 In future this application will be extended for giving information about near shops, hospitals, malls. and a well working map that will give idea for reaching these places
 
  ## Requirements
- Nodejs
- npm
- express module
- bodyparser module
+ Nodejs <br>
+ npm <br>
+ express module <br>
+ bodyparser module <br>
  ejs module
  
  nodejs can be installed using the command
@@ -15,7 +15,7 @@ In future this application will be extended for giving information about near sh
 $ sudo apt install nodejs
 ```
 
-and other packages are contained in repo and there is no need to install them sepratly
+and other packages are contained in repo and there is no need to install them separately
 
 
 ## Installation
